@@ -1,0 +1,130 @@
+/* v3 — Cometeer layout & spacing (measured cometeer.com @1440: 40px gutter, Oswald 72/48/32, DM Sans 16/25.6,
+   mono uppercase 58px pills, 20px image radius, 659px split squares, ~48px section rhythm). Kanther palette. */
+body.v3{--paper:#f6f1e8;--cream:#efe7da;--ink:#1d1b19;--g:40px;--c-sec:48px;--r:20px;background:var(--paper);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;font-size:16px;line-height:1.6}
+.v3 .c-h1,.v3 .c-h2,.v3 .c-h3{font-family:Oswald,"Work Sans",sans-serif;font-weight:700;letter-spacing:0;line-height:1;text-transform:none}
+.v3 .c-h1{font-size:72px}
+.v3 .c-h2{font-size:48px}
+.v3 .c-h3{font-size:32px}
+.v3 .c-mono{font-family:"Azeret Mono",ui-monospace,monospace;font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--mute)}
+.v3 .c-pill{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:58px;padding:16px 24px;border-radius:100px;background:var(--sand);color:var(--ink);font-family:"Azeret Mono",ui-monospace,monospace;font-size:16px;text-transform:uppercase;letter-spacing:.02em;white-space:nowrap;transition:background .25s,transform .25s}
+.v3 .c-pill:hover{background:#d2bea2;transform:translateY(-1px)}
+.v3 .c-pill.outline{background:transparent;color:#fff;border:1.5px solid #fff}
+.v3 .c-pill.outline:hover{background:#fff;color:var(--ink)}
+.v3 .c-pill.block{width:100%;margin-top:20px}
+.v3 .c-link{display:inline-block;margin-top:16px;font-family:"Azeret Mono",monospace;font-size:14px;text-transform:uppercase;text-decoration:underline;text-underline-offset:4px}
+.v3 .c-media{border-radius:var(--r);overflow:hidden;aspect-ratio:1;background:var(--cream)}
+.v3 .c-media img{width:100%;height:100%;object-fit:cover}
+
+/* 1 hero 654h */
+.c-hero{position:relative;height:654px;overflow:hidden;color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;isolation:isolate;background:#2a3036}
+.c-hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.c-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:rgba(12,14,18,.34)}
+.c-hero-in{padding:0 var(--g);display:flex;flex-direction:column;align-items:center;gap:16px}
+.c-hero-in p{font-size:16px;max-width:52ch}
+.c-ctas{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap;justify-content:center}
+
+/* 2 benefits 206h */
+.c-benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--g);padding:56px var(--g);text-align:center}
+.c-benefits svg{width:28px;height:28px;margin:0 auto 10px}
+.c-benefits h3{font-family:Oswald,sans-serif;font-size:32px;font-weight:700;line-height:1}
+.c-benefits p{margin-top:8px;color:var(--ink-2)}
+
+/* 3/4/8 splits — two 659px squares, 32px gap, 24px vertical */
+.c-split,.c-why{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;padding:24px var(--g)}
+.c-split.rev .c-media,.c-why.rev .c-media{order:2}
+.c-copy{display:flex;flex-direction:column;align-items:flex-start;gap:20px;padding:0 clamp(0px,4vw,64px)}
+.c-checks{list-style:none;display:flex;flex-direction:column;gap:10px}
+.c-checks li{font-family:"Azeret Mono",monospace;font-size:15px;text-transform:uppercase;display:flex;gap:12px}
+.c-checks li::before{content:"✓";font-weight:700}
+.c-why .c-media{aspect-ratio:auto;height:402px}
+.c-why .c-copy p{max-width:46ch;color:var(--ink-2)}
+
+/* 5 featured */
+.c-feat{display:grid;grid-template-columns:1.25fr 1fr;gap:48px;padding:var(--c-sec) var(--g);align-items:start}
+.c-feat-media{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;position:sticky;top:90px}
+.c-feat-media img{width:100%;height:100%;object-fit:cover}
+.c-feat-info{display:flex;flex-direction:column;gap:12px;padding-top:12px}
+.c-price{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.c-price b{font-family:Oswald,sans-serif;font-size:40px}
+.c-price s{color:var(--mute)}
+.c-feat-info p{color:var(--ink-2)}
+.c-dl{list-style:none;border-top:1px solid #d9cfbf;margin:8px 0}
+.c-dl li{padding:12px 0;border-bottom:1px solid #d9cfbf;font-size:15px}
+.c-feat select{height:52px;border-radius:12px;border:1.5px solid #d9cfbf;background:#fff;padding:0 14px;font:inherit;font-size:15px;margin-bottom:6px}
+.c-feat label{margin-top:8px}
+
+/* 6 inside */
+.c-inside{text-align:center;padding:72px var(--g);display:flex;flex-direction:column;align-items:center;gap:14px}
+.c-inside p{max-width:60ch;color:var(--ink-2)}
+
+/* 7/12 rails */
+.c-rail-sec{padding:var(--c-sec) 0}
+.c-head{display:flex;justify-content:space-between;align-items:end;padding:0 var(--g);margin-bottom:16px}
+.v3 .rail-nav button{width:44px;height:44px;border-radius:99px;border:1.5px solid var(--ink);font-size:18px}
+.v3 .scent-rail{grid-auto-columns:clamp(240px,24.8vw,357px);gap:10px;padding:0 var(--g);scroll-padding-left:var(--g)}
+.v3 .scent .media{border-radius:12px}
+.v3 .scent b{font-family:Oswald,sans-serif;font-size:18px;letter-spacing:0;margin-top:12px}
+.v3 .scent b span{font-family:"DM Sans",sans-serif;font-style:normal;font-size:16px;font-weight:500}
+.v3 .scent p{font-size:13px}
+.v3 .ugc-rail{padding:0 var(--g);scroll-padding:0 var(--g);gap:10px}
+
+/* 9 product list */
+.c-list{padding:var(--c-sec) var(--g)}
+.c-list>.c-h2{margin-bottom:28px;max-width:20ch}
+.c-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px 16px}
+.c-card .media{position:relative;display:block;aspect-ratio:1;border-radius:0;overflow:hidden;background:#efe6d6}
+.c-card .media img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.c-card:hover .media img{transform:scale(1.04)}
+.c-card .add{position:absolute;right:12px;bottom:12px;height:40px;padding:0 18px;border-radius:99px;background:var(--ink);color:#fff;font-family:"Azeret Mono",monospace;font-size:13px;text-transform:uppercase}
+.c-card h3{font-family:Oswald,sans-serif;font-size:20px;font-weight:700;margin-top:12px}
+.c-card .in{font-size:14px;color:var(--ink-2)}
+.c-card .pr{margin-top:6px;font-weight:700}
+.c-card .unit{font-family:"Azeret Mono",monospace;font-size:12px;color:var(--mute);text-transform:uppercase}
+.v3 .bundles .bundle{border-radius:var(--r)}
+
+/* 10 marquee */
+.c-marquee{overflow:hidden;background:var(--ink);color:var(--paper);padding:22px 0}
+.c-marquee div{display:flex;gap:56px;width:max-content;animation:marq 40s linear infinite}
+.c-marquee span{font-family:Oswald,sans-serif;font-size:32px;font-weight:700;text-transform:uppercase;white-space:nowrap}
+
+/* 11 reviews slideshow */
+.c-reviews{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;padding:var(--c-sec) var(--g)}
+.c-reviews .c-media{aspect-ratio:auto;height:560px}
+.c-slides{position:relative;min-height:320px}
+.c-slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:20px;opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s;padding:0 clamp(0px,4vw,64px)}
+.c-slide.on{opacity:1;transform:none}
+.c-slide .stars{display:flex;gap:4px}.c-slide .stars svg{width:20px;height:20px}
+.c-slide blockquote{font-family:Oswald,sans-serif;font-size:40px;font-weight:700;line-height:1.08}
+.c-slide cite{font-style:normal;font-family:"Azeret Mono",monospace;text-transform:uppercase;font-size:14px}
+.c-dots{position:absolute;left:clamp(0px,4vw,64px);bottom:-8px;display:flex;gap:8px}
+.c-dots button{width:10px;height:10px;border-radius:99px;background:#cfc3b1}
+.c-dots button.on{background:var(--ink)}
+
+/* 13 statement */
+.c-quote{text-align:center;padding:64px var(--g);display:flex;flex-direction:column;align-items:center;gap:28px;background:var(--cream)}
+.c-quote .c-h2{max-width:24ch}
+
+/* 15 faq */
+.c-faq{display:grid;grid-template-columns:1fr 2fr;gap:var(--g);padding:var(--c-sec) var(--g) 72px}
+.v3 .acc summary{font-family:Oswald,sans-serif;font-weight:500;font-size:22px}
+
+/* shared shell tweaks for v3 */
+.v3 .news .h2,.v3 .h2{font-family:Oswald,sans-serif;letter-spacing:0;font-weight:700}
+.v3 .news .it{font-family:Oswald,sans-serif;font-style:normal}
+
+@media(max-width:900px){
+  body.v3{--g:16px}
+  .v3 .c-h1{font-size:44px}.v3 .c-h2{font-size:34px}.v3 .c-h3{font-size:26px}
+  .c-hero{height:78svh}
+  .c-benefits{grid-template-columns:1fr;gap:28px;padding:44px var(--g)}
+  .c-split,.c-why,.c-reviews,.c-feat,.c-faq{grid-template-columns:1fr;gap:20px}
+  .c-split.rev .c-media,.c-why.rev .c-media{order:0}
+  .c-copy{padding:0}
+  .c-feat-media{position:relative;top:0}
+  .c-grid{grid-template-columns:1fr 1fr;gap:24px 10px}
+  .c-reviews .c-media,.c-why .c-media{height:320px}
+  .c-slide blockquote{font-size:28px}
+  .c-marquee span{font-size:22px}
+  .v3 .c-pill{height:52px;font-size:14px;padding:14px 20px}
+}
+.c-feat>*,.c-split>*,.c-why>*,.c-reviews>*{min-width:0}.c-feat select{width:100%;min-width:0;max-width:100%}

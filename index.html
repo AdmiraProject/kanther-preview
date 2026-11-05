@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Kanther · Fragancias de lujo inspiradas en tu perfume favorito</title>
+<meta name="description" content="Fragancias inspiradas en perfumes de diseñador. 30 ml desde $240, 100 ml por $600. Aroma duradero, libres de parabenos, envíos a todo México y 7 sucursales.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=29">
+<link rel="preload" as="image" href="media/cut/k201.webp">
+</head>
+<body>
+<main>
+
+<!-- ============ HERO: scroll story (Phlur-style scent world per bottle) ============ -->
+<section class="hero" id="hero" aria-label="Fragancias Kanther">
+  <div class="stage">
+    <div class="blob a"></div><div class="blob b"></div><div class="blob c"></div>
+    <div class="grain"></div>
+    <div class="ghost" aria-hidden="true">K.201</div>
+    <div class="scene" aria-hidden="true"><div class="floor"></div></div>
+    <div class="notes" aria-hidden="true"></div>
+
+    <div class="hero-copy">
+      <div class="chap intro on" data-ch="0">
+        <span class="insp"><i></i>Kanther · Hecho para ti</span>
+        <h1 class="h1">Fragancias de lujo <span class="it">inspiradas en tu perfume favorito</span></h1>
+        <p class="lead">47 aromas para mujer, hombre y unisex. Pruébalos en 30 ml desde $240 o llévate 100 ml por $600.</p>
+        <div class="ctas"><a class="btn btn-ink" href="#coleccion">Comprar fragancias <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-line" href="https://kanther.mx/quiz/" target="_blank" rel="noopener">Haz el quiz</a></div>
+      </div>
+      <!-- scent chapters injected by home.js -->
+    </div>
+
+    <aside class="price-card" aria-live="polite">
+      <div class="row"><span class="lbl">Precio en boutique</span><span class="old" data-old>$3,420</span></div>
+      <div class="row"><span class="lbl">Kanther 100 ml</span><span class="new" data-new>$600</span></div>
+      <span class="save" data-save>Ahorras $2,820</span>
+      <span class="small">Precio en boutique de referencia publicado en kanther.mx. Kanther no se asocia con la marca original.</span>
+    </aside>
+
+    <div class="hero-progress" role="tablist" aria-label="Capítulos"></div>
+    <div class="scroll-cue" aria-hidden="true">Desliza<i></i></div>
+  </div>
+</section>
+
+<!-- ============ FEATURED (Happy Mammoth "as seen in" → honest: inspired by + where to find us) ============ -->
+<section class="featured lap" style="background:var(--paper)" aria-label="Inspirados en">
+  <div class="wrap feat-row">
+    <div class="feat-label"><b>Inspirados en</b><span>No nos asociamos ni afiliamos con estas marcas.</span></div>
+    <div class="feat-track"><div class="feat-logos"><span class="wm-serif">DIOR</span><span class="wm-bold">CHANEL</span><span class="wm-thin">YVES SAINT LAURENT</span><span class="wm-bold">TOM FORD</span><span class="wm-low">le labo</span><span class="wm-serif">CREED</span><span class="wm-ital">Versace</span><span class="wm-wide">CAROLINA HERRERA</span><span class="wm-thin">LOUIS VUITTON</span><span class="wm-ital">Maison Francis Kurkdjian</span><span class="wm-bold">PACO RABANNE</span><span class="wm-wide">GIORGIO ARMANI</span><span class="wm-ital">Lancôme</span><span class="wm-serif">GIVENCHY</span><span class="wm-thin">VALENTINO</span><span class="wm-serif">DIOR</span><span class="wm-bold">CHANEL</span><span class="wm-thin">YVES SAINT LAURENT</span><span class="wm-bold">TOM FORD</span><span class="wm-low">le labo</span><span class="wm-serif">CREED</span><span class="wm-ital">Versace</span><span class="wm-wide">CAROLINA HERRERA</span><span class="wm-thin">LOUIS VUITTON</span><span class="wm-ital">Maison Francis Kurkdjian</span><span class="wm-bold">PACO RABANNE</span><span class="wm-wide">GIORGIO ARMANI</span><span class="wm-ital">Lancôme</span><span class="wm-serif">GIVENCHY</span><span class="wm-thin">VALENTINO</span></div></div>
+  </div>
+</section>
+
+<!-- ============ SHOP BY (Glossier tiles) ============ -->
+<section class="sec" aria-labelledby="t-shop">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Compra por línea</span><h2 class="h2 split" id="t-shop" style="margin-top:14px">Encuentra <span class="it">tu</span> aroma</h2></div>
+      <p class="lead">Elige por línea o búscalo por la clave K. de tu perfume favorito.</p>
+    </div>
+    <div class="tiles" data-tiles></div>
+  </div>
+</section>
+
+<!-- ============ COLLECTION ============ -->
+<section class="sec" id="coleccion" aria-labelledby="t-col">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Colección Kanther</span><h2 class="h2 split" id="t-col" style="margin-top:14px">Los más buscados</h2></div>
+      <div class="filters" role="tablist" aria-label="Filtrar colección">
+        <button class="chip on" data-f="all">Todos</button><button class="chip" data-f="mujer">Mujer</button><button class="chip" data-f="hombre">Hombre</button><button class="chip" data-f="unisex">Unisex</button>
+      </div>
+    </div>
+    <div class="grid4" data-grid></div>
+    <div class="center" style="margin-top:48px"><button class="btn btn-line" data-more>Ver las 47 fragancias</button></div>
+  </div>
+</section>
+
+<!-- ============ SCENT FILMS (Cometeer rail) ============ -->
+<section class="sec scents" aria-labelledby="t-scents">
+  <div class="wrap"><div class="sec-head"><div><span class="eyebrow">Un frasco, un mundo</span><h2 class="h2 split" id="t-scents" style="margin-top:14px">Cada aroma <span class="it">cuenta su historia.</span></h2></div>
+    <div class="rail-nav"><button data-dir="-1" aria-label="Anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button data-dir="1" aria-label="Siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div></div>
+  <div class="scent-rail" data-scents></div>
+</section>
+
+<!-- ============ VALUE (Gruns problem → Kanther price race) ============ -->
+<section class="sec" aria-labelledby="t-val"><div class="value">
+  <div class="wrap">
+    <div class="value-grid">
+      <div class="swap-l">
+        <span class="eyebrow">Haz la cuenta</span>
+        <h2 class="h2 split" id="t-val" style="margin-top:14px">Un frasco en boutique. <span class="it">O todos estos.</span></h2>
+        <p class="lead rv">Elige el perfume que amas y mira cuántos frascos Kanther de 100 ml te llevas por lo mismo.</p>
+        <div class="swap-chips rv" role="tablist" aria-label="Elige una fragancia" data-swap-chips></div>
+        <a class="btn btn-sand rv" style="margin-top:32px" data-swap-cta href="product.html?k=301">Ver K.301</a>
+      </div>
+      <div class="swap" data-swap aria-live="polite"></div>
+    </div>
+    <p class="fine">Precio en boutique de referencia publicado en kanther.mx para cada fragancia, comparado con Kanther 100 ml ($600). Kanther no se asocia ni afilia con las marcas originales.</p>
+  </div>
+</div></section>
+
+<!-- ============ BENEFITS (Gruns 4-up) ============ -->
+<section class="sec perks-band" aria-labelledby="t-ben">
+  <div class="wrap">
+    <h2 class="perks-h split" id="t-ben">Elegir tu aroma nunca fue tan fácil <span class="it">ni tan accesible</span></h2>
+    <i class="perks-rule" aria-hidden="true"></i>
+    <ul class="perks-row"><li class="rv"><span class="bi"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="25" r="14"/><path d="M24 17v8l6 4M20 6h8M24 6v5"/></svg></span><span class="bl">Aroma de<br>+5 horas</span></li><li class="rv"><span class="bi"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 7c6 8 11 13 11 21a11 11 0 0 1-22 0c0-8 5-13 11-21Z"/><path d="M18 30c1 3 3 5 6 5"/><path d="M10 10l28 28"/></svg></span><span class="bl">Libre de<br>parabenos</span></li><li class="rv"><span class="bi"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h24v18H4zM28 20h8l6 6v6H28"/><circle cx="12" cy="34" r="3.5"/><circle cx="35" cy="34" r="3.5"/></svg></span><span class="bl">Envío gratis<br>desde $1,900</span></li><li class="rv"><span class="bi"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="11" y="21" width="26" height="19" rx="3"/><path d="M16 21v-5a8 8 0 0 1 16 0v5"/><circle cx="24" cy="30" r="2.2"/><path d="M24 32v3"/></svg></span><span class="bl">Pagos<br>seguros</span></li><li class="rv"><span class="bi"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6 10 11v11c0 9 6 16 14 19 8-3 14-10 14-19V11L24 6Z"/><path d="m17 24 5 5 9-10"/></svg></span><span class="bl">Garantía de<br>satisfacción</span></li><li class="rv"><span class="bi"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="15" y="16" width="18" height="25" rx="5"/><path d="M19 16v-5h10v5M20 7h8M15 28h18"/></svg></span><span class="bl">Pruébalo<br>en 30 ml</span></li><li class="rv"><span class="bi"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 42s12-10.5 12-20a12 12 0 0 0-24 0c0 9.5 12 20 12 20Z"/><circle cx="24" cy="22" r="4.5"/></svg></span><span class="bl">7 sucursales<br>CDMX y Edomex</span></li></ul>
+  </div>
+</section>
+
+<!-- ============ TIMELINE (Happy Mammoth "what to expect") ============ -->
+<section class="sec" aria-labelledby="t-time">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Qué esperar</span><h2 class="h2 split" id="t-time" style="margin-top:14px">Así evoluciona <span class="it">contigo</span></h2></div>
+      <p class="lead">Cada fragancia Kanther se construye en tres capas, igual que la que te inspiró. Ejemplo: K.201, inspirado en Sauvage de Dior.</p>
+    </div>
+    <div class="tline" data-tline></div>
+  </div>
+</section>
+
+<!-- ============ UGC ============ -->
+<section class="sec ugc lap" aria-labelledby="t-ugc">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Kanther en video</span><h2 class="h2 split" id="t-ugc" style="margin-top:14px">¿Qué perfume <span class="it">traes?</span></h2></div>
+      <div class="rail-nav"><button data-dir="-1" aria-label="Anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button data-dir="1" aria-label="Siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+    </div>
+  </div>
+  <div class="ugc-rail" data-ugc></div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="sec lap" style="background:var(--paper)" aria-labelledby="t-how">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Cómo funciona</span><h2 class="h2 split" id="t-how" style="margin-top:14px">Tu perfume favorito en <span class="it">tres pasos</span></h2></div></div>
+    <div class="steps">
+      <div class="step rv"><span class="n">01</span><h3 class="h3">Encuentra tu aroma</h3><p>Busca por el nombre del perfume que amas o por su clave K. ¿No sabes cuál? Responde el quiz y descubre tu fragancia ideal.</p></div>
+      <div class="step rv rv-d1"><span class="n">02</span><h3 class="h3">Elige tu tamaño</h3><p>30 ml por $240 para probar, viajar o regalar. 100 ml por $600 para el día a día. O arma un bundle desde $400.</p></div>
+      <div class="step rv rv-d2"><span class="n">03</span><h3 class="h3">Recíbelo o pruébalo</h3><p>Envíos nacionales rápidos y seguros, gratis desde $1,900. O visita cualquiera de nuestras 7 sucursales.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FILM EXPAND (scroll-driven video) ============ -->
+<section class="vx" data-vx aria-label="Kanther en pantalla completa">
+  <div class="vx-stage">
+    <div class="vx-words" aria-hidden="true"><span>Una sola</span><span class="it">compra.</span></div>
+    <div class="vx-frame"><video data-wide="media/film/s3-wide.mp4" muted loop playsinline preload="metadata" aria-label="Video Kanther: dos frascos K.343 de 100 ml"></video></div>
+    <div class="vx-cap">
+      <div><span class="eyebrow">Bundles · Fragancias a elegir</span><h2 class="h2">Arma tu set <span class="it">desde $400</span></h2><p class="lead">Ahorra hasta $640. Combina Mujer, Hombre y Unisex.</p></div>
+      <div class="btns"><a class="btn btn-light" href="#bundles">Arma tu set</a><a class="btn btn-glass" href="product.html?k=343">Ver K.343</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BUNDLES ============ -->
+<section class="sec lap" id="bundles" style="background:var(--cream)" aria-labelledby="t-bun">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Bundles · Fragancias a elegir</span><h2 class="h2 split" id="t-bun" style="margin-top:14px">Arma tu <span class="it">rotación</span></h2></div>
+      <p class="lead">Combina aromas de Mujer, Hombre y Unisex. Tú eliges cada fragancia.</p>
+    </div>
+    <div class="bundles" data-bundles></div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="sec lap" id="resenas" style="background:var(--paper)" aria-labelledby="t-rev">
+  <div class="wrap">
+    <div class="reviews-head">
+      <div><span class="eyebrow">Lo que dicen</span><h2 class="h2 split" id="t-rev" style="margin-top:14px">"¿Qué perfume <span class="it">traes puesto?"</span></h2></div>
+      <p class="lead">La pregunta que más escuchan quienes usan Kanther.</p>
+    </div>
+    <div class="quotes" data-quotes></div>
+    <div class="guarantee rv">
+      <div class="seal" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="c" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs><text font-size="10.5" font-weight="600" letter-spacing="3.2"><textPath href="#c">GARANTÍA DE SATISFACCIÓN · KANTHER · </textPath></text></svg><b>K.</b></div>
+      <div><h3 class="h3">Garantía de satisfacción</h3><p>Compra con pagos seguros y envíos rápidos. Si tienes dudas sobre tu pedido, nuestro equipo te acompaña.</p></div>
+      <a class="btn btn-ink" href="#coleccion">Comprar con confianza</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOCIAL FAN (Gruns "getting around") ============ -->
+<section class="sec fan-sec lap" aria-labelledby="t-fan">
+  <div class="wrap fan-head">
+    <h2 class="h1 split" id="t-fan"><span class="ac">47 fragancias.</span>Nos encuentras<br>en todos lados</h2>
+    <div class="socials"><a href="https://www.instagram.com/kanther.mx/" target="_blank" rel="noopener" aria-label="Instagram de Kanther"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a><a href="#sucursales" aria-label="Sucursales"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg></a></div>
+  </div>
+  <div class="fan" data-fan aria-hidden="true"></div>
+</section>
+
+<!-- ============ QUIZ BAND ============ -->
+<section class="sec" aria-labelledby="t-quiz">
+  <div class="band">
+    <div class="txt">
+      <span class="eyebrow">Fragancia ideal</span>
+      <h2 class="h2 split" id="t-quiz" style="margin:14px 0 18px">¿No sabes cuál <span class="it">elegir?</span></h2>
+      <p class="lead">Responde el quiz y descubre la fragancia perfecta para ti en menos de un minuto.</p>
+      <a class="btn btn-ink" style="margin-top:32px" href="https://kanther.mx/quiz/" target="_blank" rel="noopener">Hacer el quiz <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="art" aria-hidden="true"><img src="media/cut/k105.webp" alt="" loading="lazy"><img src="media/cut/k201.webp" alt="" loading="lazy"><img src="media/cut/k128.webp" alt="" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- ============ STORES (Luuna showroom) ============ -->
+<section class="sec" id="sucursales" aria-labelledby="t-st">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Visita nuestras sucursales</span><h2 class="h2 split" id="t-st" style="margin-top:14px">Huélelo <span class="it">antes</span> de llevarlo</h2></div>
+      <p class="lead">Más de 30 fragancias te están esperando. Abierto todos los días de 11:00 a 21:00.</p>
+    </div>
+    <div class="stores" data-stores></div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="sec" aria-labelledby="t-faq">
+  <div class="wrap faq-grid">
+    <div><span class="eyebrow">Preguntas frecuentes</span><h2 class="h2 split" id="t-faq" style="margin-top:14px">¿Alguna <span class="it">duda?</span></h2></div>
+    <div class="acc" data-faq></div>
+  </div>
+</section>
+
+<!-- ============ CLOSING CTA (Gruns "see what the hype is about") ============ -->
+<section class="sec hype" aria-labelledby="t-hype">
+  <div class="wrap">
+    <div class="hype-card" data-hype>
+      <div class="hype-txt">
+        <div class="hype-meta"><span class="st">★★★★★</span><span>47 fragancias</span><i></i><span>7 sucursales</span><i></i><span>Envíos a todo México</span></div>
+        <h2 class="h2 split" id="t-hype">Huele a lujo. <span class="it">Paga lo justo.</span></h2>
+        <ul class="hype-list">
+          <li><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><path d="m7.5 12 3 3 6-6" stroke="#141210" stroke-width="2" fill="none"/></svg>Garantía de satisfacción</li>
+          <li><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><path d="m7.5 12 3 3 6-6" stroke="#141210" stroke-width="2" fill="none"/></svg>Aroma en piel duradero, más de 5 hrs</li>
+          <li><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><path d="m7.5 12 3 3 6-6" stroke="#141210" stroke-width="2" fill="none"/></svg>Envío gratis desde $1,900</li>
+        </ul>
+        <div class="hype-btns"><a class="btn btn-sand" href="index.html?para=mujer#coleccion">Comprar Mujer</a><a class="btn btn-sand" href="index.html?para=hombre#coleccion">Comprar Hombre</a></div>
+      </div>
+      <div class="hype-art" aria-hidden="true"><img class="b2" src="media/cut/k132.webp" alt=""><img class="b1" src="media/cut/k201.webp" alt=""><img class="b3" src="media/cut/k105.webp" alt=""></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<script src="data.js?v=29"></script>
+<script src="app.js?v=29"></script>
+<script src="sections.js?v=29"></script>
+<script src="home.js?v=29"></script>
+</body>
+</html>
