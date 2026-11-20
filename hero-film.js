@@ -1,4 +1,3 @@
-/* v2 hero: Phlur-style full-bleed film. Load reveal, scroll parallax, pause control. */
 (() => {
   const fh = document.querySelector("[data-fh]"); if (!fh) return;
   const v = fh.querySelector("video"), reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;

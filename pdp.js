@@ -154,7 +154,6 @@
     $("[data-vs-add]").onclick = () => { add({ k: p.k, size: "100" }); toast(`K.${p.k} · 100 ml agregado`); };
   } else vsSec.remove();
 
-  /* ---------- size guide (Luuna) ---------- */
   const bimg = cut || p.imgs[0];
   $("[data-sizeguide]").innerHTML = [["30", 240, "Para probar un aroma nuevo, llevarlo en la bolsa, viajar o regalar.", .62], ["100", 600, "Para tu fragancia de todos los días. El mejor precio por mililitro.", 1]]
     .map(([ml, pr, d, s], i) => `<button class="sg ${ml === size ? "on" : ""} rv ${i ? "rv-d1" : ""}" data-sg="${ml}">

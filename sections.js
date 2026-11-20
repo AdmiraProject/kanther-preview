@@ -150,7 +150,6 @@
   window.KV = { filmExpand, ctaFilm };
 })();
 
-/* Gruns-style social fan + closing CTA (shared). Fan cards ride a big wheel that turns with scroll. */
 (() => {
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const CARDS = ["u2", "st1", "p1", "hf4", "u5", "u8", "hf6", "p3", "u6", "st2", "hf2", "u7", "p2"];
